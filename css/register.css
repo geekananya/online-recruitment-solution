@@ -1,0 +1,91 @@
+body{
+    font-size: 1.3rem;
+}
+p{
+    font-size: 1.5rem;
+    margin-top: 15px;
+}
+h3{
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.body-wrapper{
+    margin: 5% 15px 15px 15px;
+    justify-content: center;
+}
+.border{
+    border: 2px solid #3870676b;
+    border-radius: 15px;
+    background-color: white;
+}
+input, select{
+    display:block;
+    font-size: 1.2rem;
+    margin: 10px;
+    /* background-color: aliceblue; */
+    border: 1px solid #3870676b;
+    border-radius: 5px;
+    padding: 10px;
+    width: 40%;
+}
+#fname, #lname, #company, #comp-mail{
+    display: inline; 
+}
+.register{
+    padding: 30px;
+    width: 35%;
+}
+.sign-in{
+    padding: 30px;
+    width: 30%;
+}
+#login-mail, #login-password, #pass, #conf-pass{
+    width: 60%;
+}
+.dividerv{
+    /* position: absolute; */
+    width: 0px;
+    float: left;
+    /* top: 0px;
+    left: 50vw; */
+    height: 223px;
+    border-right: 2px solid #3870676b;
+    margin: 70px
+}
+.dividerh{
+    border-bottom: 2px solid #3870676b;
+    /* position: relative;
+    top: 20px; */
+    margin-top: 20px;
+    margin-bottom: 10px;
+    width: 60%;
+}
+.login{
+    margin-top: 20px;
+}
+.or{
+    margin-top: 30px;
+    margin-bottom: 15px;
+}
+.sign-methods{
+    margin-left: 10%;
+    margin-right: 10%;
+    cursor: pointer;
+}
+footer{
+    position: sticky;
+    bottom: 0;
+    font-weight: bold;
+}
+
+
+
+
+
+
+@media only screen and (max-width: 600px) {
+    body, body *{
+        font-size: 1.2rem;
+    }
+}

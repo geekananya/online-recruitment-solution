@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Ysabeau+Infant&display=swap');
+
+body{
+    margin: 0 0;
+    background-color: aliceblue;
+    font-family: 'Ysabeau Infant', sans-serif;
+}
+h1{
+    font-size: 3rem;
+}
+
+.header {
+    background-color: aliceblue;
+	font-size: 1.5rem;
+	padding-left: 30px;
+    box-shadow: 5px 0px 5px #387067;
+	position: sticky;
+	z-index: 2;
+	top: 0;
+}
+.container {
+    height: 75px;
+	display: flex;
+    align-items: center;
+    justify-content: flex-end;
+	margin-right: 20px;
+}
+.header > div >a{
+    padding: 10px;
+	text-decoration: none;
+	/* color: #f2f2f2; */
+	color: rgb(22, 21, 21);
+}
+
+.center{
+	text-align: center;
+	margin-left: auto;
+	margin-right: auto;
+}
+a:link:hover, a:visited:hover {
+	color: #1a4e6c;
+	text-decoration: underline;
+}
+.std-font-color{
+    color: #1a4e6c;
+}
+.std-font-color-light{
+    color:#c9ffff;
+}
+.std-bg-color{
+    background-color: #2fe1b0;
+}
+.button{
+    padding: 1px 6px 4px 6px;
+    background: aliceblue;
+    color: #1a4e6c;
+    border: 1px solid #1a4e6c;
+    border-radius: 10px;
+    cursor: pointer;
+    font-family: 'Ysabeau Infant', sans-serif;
+    font-weight: bolder;
+    font-size: 1.3rem;
+    transition-duration: 0.5s;
+}
+.button:hover{
+    background: #1a4e6c;
+    color: aliceblue;
+}
+.bold{
+    font-weight: bold;
+}
+.flex{
+    display: flex;
+}
+.inline{
+    display:inline;
+}
+footer{
+    position: absolute;
+    bottom: 0;
+    background-color: white;
+    font-size: 1.2rem;
+}

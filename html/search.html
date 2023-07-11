@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Search Candidates</title>
+  <link rel="stylesheet" href="../css/utils.css">
+  <link rel="stylesheet" href="../css/search.css">
+</head>
+<body>
+    <nav class='header std-font-color'>
+        <!-- <img src="" alt="LOGO"> -->
+        <div class="container">
+            <a href="dashboard.html" rel="noreferrer">Dashboard</a>
+            <a href="home.html">Logout</a>
+            <a href="">About</a>
+            <a href="" class="cont">Contact Us</a>
+        </div>
+    </nav>
+    <div>
+        <h1 class="center">Candidate Search</h1>
+
+        <!-- Search Form -->
+        <form id="searchForm"  class="center">
+            <div class="inline">
+                <label for="location">Location:</label>
+                <input class="std-font-color" type="text" id="location" placeholder="Enter location">
+            </div>
+            <div class="inline">
+                <label for="jobRole">Job Role:</label>
+                <select class="std-font-color" id="jobRole" name="jobRole">
+                    <option value="All">All</option>
+                    <option value="Software Engineer">Software Engineer</option>
+                    <option value="Data Scientist">Data Scientist</option>
+                    <option value="Product Manager">Product Manager</option>
+                    <option value="UX Designer">UX Designer</option>
+                    <option value="Marketing Specialist">Marketing Specialist</option>
+                    <option value="Business Analyst">Business Analyst</option>
+                    <option value="Human Resources Manager">Human Resources Manager</option>
+                    <option value="Graphic Designer">Graphic Designer</option>
+                    <option value="Financial Analyst">Financial Analyst</option>
+                </select>
+            </div>
+
+            <button type="submit" class="button">Search</button>
+        </form>
+    </div>
+
+
+    <!-- Displayed Results -->
+    <div id="results" class="results"></div>
+
+    <!-- Saved Candidates Section -->
+    <h2 class="head center">Saved Candidates</h2>
+    <div  class="saved center">
+        <ol id="savedCandidates"></ol>
+    </div>
+
+    <script type="text/javascript" src="../js/search.js"></script>
+</body>
+</html>

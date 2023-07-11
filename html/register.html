@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login/Register</title>
+    <link rel="stylesheet" href="../css/utils.css">
+    <link rel="stylesheet" href="../css/register.css">
+</head>
+<body>
+    <nav class='header std-font-color'>
+        <!-- <img src="" alt="LOGO"> -->
+        <div class="container">
+			<a href="home.html" rel="noreferrer">Home</a>
+			<a href="">About</a>
+			<a href="" class="cont">Contact Us</a>
+		</div>
+    </nav>
+    <div class="body-wrapper flex">
+        <div class="register border">
+            <form method="POST">
+                <input type="text" id="fname" placeholder="First Name" required class="std-font-color"> 
+                <input type="text" id="lname" placeholder="Last Name" class="std-font-color"> 
+                <input type="email" id="mail" placeholder="Email" required class="std-font-color"> 
+                <input type="text" id="company" placeholder="Company Name" required class="std-font-color"> 
+                <input type="text" id="comp-mail" placeholder="Company Email" required class="std-font-color"> 
+                <!-- <input type="dropdown" id="position" placeholder="Your Position in the company">  -->
+                <label for="position">Your Position in the company</label>
+                    <select id="position" name="position" required class="std-font-color">
+                        <option value="Hiring Manager">Hiring Manager</option>
+                        <option value="HR">HR</option>
+                        <option value="CEO">CEO</option>
+                        <option value="Other">Other</option>
+                    </select>
+                <label>Create a password upto 8 characters</label>
+                <input type="password" placeholder="Password" id="pass" required>
+                <input type="password" placeholder="Confirm Password" id="conf-pass" required>
+                <input type="submit" class="button center">
+            </form>
+        </div>
+        <div class="dividerv"></div>
+        <div class="sign-in border">
+            <h3>Already met us? Sign in.</h3>
+            <form method="get" action="dashboard.html">
+                <label>Company Email</label>
+                <input type="text" id="login-mail" required>
+                <label>Password</label>
+                <input type="password" id="login-password" required>
+                <input type="submit" value="Login" class="login center button" id="login">
+            </form>
+            <div class="dividerh center"></div>
+            <!-- <p class="or center std-font-color">OR</p> -->
+            <img class="sign-methods" src="../assets/sign-in-methods.png" width="80%">
+        </div>
+    </div>
+    <footer>Enter valid login details to access dashboard for Search feature.</footer>
+</body>
+</html>
